@@ -17,15 +17,32 @@ go version
 1. Fork the repository
 2. Clone your fork:
    
+   **Using HTTPS:**
    ```bash
     git clone https://github.com/YOUR_USERNAME/mcp-go.git
     cd mcp-go
     ```
+   
+   **Using SSH:**
+   ```bash
+    git clone git@github.com:YOUR_USERNAME/mcp-go.git
+    cd mcp-go
+    ```
+
 3. Install the required packages:
 
     ```bash
     go mod tidy
     ```
+
+#### SSH Key Compatibility
+
+SSH keys generated for GitLab can be used with GitHub and vice versa. SSH keys are platform-agnostic and follow standard cryptographic protocols. If you already have SSH keys set up for GitLab, you can:
+
+1. Use the same public key with your GitHub account by adding it in GitHub Settings → SSH and GPG keys
+2. Or generate a new SSH key specifically for GitHub following the [GitHub SSH key documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+The SSH key format and cryptographic standards (RSA, Ed25519, ECDSA) are the same across Git hosting platforms.
 
 ### Workflow
 
